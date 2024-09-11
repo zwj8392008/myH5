@@ -1,1489 +1,327 @@
 <!DOCTYPE html>
-<html>
-<head> 
-<meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title> 
-<!-- <script src=".\test.js"></script> -->
-<script>//alert('秋香')</script>
-<script>//prompt('输入')</script>
-<script>
-    // var variable='';
-    // variable=1+variable+1;
-    // console.log(1+variable+1);
-    // console.log(typeof variable);
-
-    // var num=prompt('请输入第一个数');
-    // num=parseFloat(num)+parseFloat(prompt('请输入第二个数'));
-    // alert(parseFloat(num)+parseFloat(prompt('请输入第二个数')));
-    // alert(0.1+0.2);
-        //------------------------------------------------------------------
-    // var num=18,str='18'; 
-    // console.log(num==str);
-    // console.log(typeof num);
-    // console.log(typeof str);
-
-    // console.log(18==='18');
-    // console.log(!(3>5));
-    // console.log(1&&1+2&&3+4);
-        //------------------------------------------------------------------
-    // var age=prompt("请输入年龄：");
-    // if(age>=18)
-    // {
-    //    alert("欢迎来到网吧！");
-    // }
-    // else
-    // {
-    //     alert("请走开！");
-    // }
-        //------------------------------------------------------------------
-    // var year=prompt('请输入年份');
-    // if(year%400==0||year%4==0&&year%100!=0)
-    // {
-    //     alert(year+'是闰年');
-    // }
-    // else
-    // {
-    //     alert(year+'是平年');
-    // }
-        //------------------------------------------------------------------
-    // var name=prompt('请输入中奖者姓名:');
-    // if(name=='刘德华')
-    // {
-    //     alert('恭喜你中了500万元！');
-    // }
-    // else
-    // {
-    //     alert('没有中奖，继续努力！');
-    // }
-        //------------------------------------------------------------------
-    // var score=prompt('请输入分数:');
-    // if(score<60)
-    // {
-    //     alert('等级E');
-    // }
-    // else if(score>=60&&score<70)
-    // {
-    //     alert('等级D');
-    // }
-    // else if(score>=70&&score<80)
-    // {
-    //     alert('等级C');
-    // }
-    // else if(score>=80&&score<90)
-    // {
-    //     alert('等级B');
-    // }
-    // else
-    // {
-    //     alert('等级A');
-    // }
-        //------------------------------------------------------------------
-    // var score=prompt('请输入分数:');
-    // if(score<60)
-    // {
-    //     alert('等级E');
-    // }
-    // else
-    // {
-    //     if(score>=60&&score<70)
-    //     {
-    //         alert('等级D');
-    //     }
-    //     else
-    //     {
-    //         if(score>=70&&score<80)
-    //         {
-    //             alert('等级C');
-    //         }
-    //         else
-    //         {
-    //             if(score>=80&&score<90)
-    //             {
-    //                 alert('等级B');
-    //             }
-    //             else
-    //             {
-    //                 alert('等级A');
-    //             }
-    //         }
-    //     }
-    // }
-        //------------------------------------------------------------------
-    // var num=prompt('请输入数字:');
-    // //var result=num>=10 ? num:'0'+num;
-    // //alert(result);
-    // alert(num>=10 ? num:'0'+num);
-        //------------------------------------------------------------------
-    // var fruit=prompt('请输入水果名:');
-    // switch(fruit)
-    // {
-    //     case '苹果':
-    //         alert('苹果7.20元/公斤');
-    //         break;
-    //     case '西瓜':
-    //         alert('西瓜2.00元/公斤');
-    //         break;
-    //     case '香蕉':
-    //         alert('香蕉6.60元/公斤');
-    //         break;
-    //     case '桃子':
-    //         alert('桃子7.32元/公斤');
-    //         break;
-    //     default:
-    //         alert('没有找到此水果');
-    //         break;
-
-    // }
-        //------------------------------------------------------------------
-    // var time=prompt('请输入时间:');
-    // if(time>23)
-    // {
-    //     alert('深夜好!');        
-    // }
-    // else if(time>18)
-    // {
-    //     alert('傍晚好!');
-    // }
-    // else if(time>12)
-    // {
-    //     alert('中午好!');
-    // }
-    // else if(time>6)
-    // {
-    //     alert('上午好!');
-    // }
-    // else
-    // {
-    //     alert('凌晨好!');
-    // }
-        //------------------------------------------------------------------
-    // var num1=prompt('请输入第一个数:');
-    // var num2=prompt('请输入第二个数:');
-    // if (num1>num2)
-    // {
-    //     alert(num1+'较大');
-    // }
-    // else
-    // {
-    //     alert(num2+'较大');        
-    // }
-    // var num=prompt('请输入一个数:');
-    // if(num%2==0)
-    // {
-    //     alert(num+'为偶数');
-    // }
-    // else
-    // {
-    //     alert(num+'为奇数');
-    // }
-        //------------------------------------------------------------------
-    // var num=prompt('请输入数字:');
-    // switch(num)
-    // {
-    //     case '1':
-    //         alert('星期一');
-    //         break;
-    //     case '2':
-    //         alert('星期二');
-    //         break;
-    //     case '3':
-    //         alert('星期三');
-    //         break;
-    //     case '4':
-    //         alert('星期四');
-    //         break;
-    //     case '5':
-    //         alert('星期五');
-    //         break;
-    //     case '6':
-    //         alert('星期六');
-    //         break;
-    //     case '7':
-    //         alert('星期日');
-    //         break;
-    //     default:
-    //         alert('输入错误!');
-    //         break;
-    // }
-    //------------------------------------------------------------------
-    // var mount=prompt('请输入班长口袋里的钱数:');
-    // if(mount>=2000)
-    // {
-    //     alert('班长请大家吃西餐!');   
-    // }
-    // else if(mount>=1500)
-    // {
-    //     alert('班长请大家吃快餐!');
-    // }
-    // else if(mount>=1000)
-    // {
-    //     alert('班长请大家喝饮料!');
-    // }
-    // else if(mount>=500)
-    // {
-    //     alert('班长请大家吃棒棒糖!');
-    // }
-    // else
-    // {
-    //     alert('班长这次钱没带够，下次请');
-    // }
-    //------------------------------------------------------------------
-    // var score=prompt('请输入分数:');
-    // if(score>=90)
-    // {
-    //     alert('等级A');
-    // }
-    // else if(score>=80)
-    // {
-    //     alert('等级B');
-    // }
-    // else if(score>=70)
-    // {
-    //     alert('等级C');
-    // }
-    // else if(score>=60)
-    // {
-    //     alert('等级D');
-    // }
-    // else
-    // {
-    //     alert('等级E');
-    // }
-    //------------------------------------------------------------------
-    // var column=prompt('请输入行数:');
-    // var row=prompt('请输入列数:');
-    // var star=''
-    // for(i=1;i<=row;i++)
-    // {
-    //     star+='♥';
-    // }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     
-    // for(j=1;j<=column;j++)
-    // {
-    //     console.log(star);
-    // }
-//------------------------------------------------------------------
-    // var column=prompt('请输入行数:');
-    // var row=prompt('请输入列数:');
-    // var star='';
-    // for(i=1;i<=column;i++)
-    // {
-    //     for(j=1;j<=row;j++)
-    //     {
-    //         star+='⭐';
-    //     }
-    //     star+='\n';
-    // }
-    // console.log(star);
-    //------------------------------------------------------------------
-    // var column=prompt('请输入行数:');
-    // var row=prompt('请输入列数:');
-    // var star='';
-    // for(i=1;i<=column;i++)
-    // {
-    //     for(j=row-i+1;j<=row;j++)
-    //     {
-    //         star+='⭐';
-                      
-    //     }
-    //     star+='\n';
-        
-    // }
-    // console.log(star);
-    //------------------------------------------------------------------
-    // var age=1;
-    // do{
-    //     console.log('今年'+age+'岁了');
-    //     age++;
-
-    // } while(age<=100);
-
-    //------------------------------------------------------------------
-    // var num=1;
-    // var sum=0;
-    // do{
-    //     sum+=num;
-    //     num++;
-    // } while(num<=100);
-    // console.log(sum);
-    //------------------------------------------------------------------
-    
-    // do{
-    //     var message=prompt('你爱我吗?');
-    // } while(message!=='我爱你');
-    // alert('你是爱我的');
-    //------------------------------------------------------------------
-    // var sum=0;
-    // for(i=1;i<=100;i++)
-    // {
-    //     if(i%7==0)
-    //     {
-    //         continue;
-    //     }
-    //     sum+=i;
-            
-    // }
-    // console.log(sum);
-    //------------------------------------------------------------------
-    // var sum=0;
-    // for(var i=1;i<=100;i++)
-    // {
-    //     sum+=i;
-    // }
-    // console.log('合计为:'+sum+'\n均值为:'+sum/(i-1));
-
-    //------------------------------------------------------------------
-    // var sum=0;
-    // var quantity=0;
-    // for(var i=1;i<=100;i++)
-    // {
-    //     if(i%2!==0)
-    //     {
-    //         continue;
-    //     }
-    //     quantity+=1;
-    //     sum+=i;
-    // }
-    // console.log('合计:'+sum+'\n个数:'+quantity+'均值:'+sum/quantity);
-//------------------------------------------------------------------
-    // var sum=0;
-    // var quantity=0;
-    // for(var i=1;i<=100;i++)
-    // {
-    //     if(i%2==0)
-    //     {
-    //         continue;
-    //     }
-    //     quantity+=1;
-    //     sum+=i;
-    // }
-    // console.log('合计:'+sum+'\n个数:'+quantity+'均值:'+sum/quantity);
-    //------------------------------------------------------------------
-    // var sum=0;
-    // var quantity=0;
-    // for(var i=1;i<=100;i++)
-    // {
-    //     if(i%7!==0)
-    //     {
-    //         continue;
-    //     }
-    //     console.log(i);
-    //     quantity+=1;
-    //     sum+=i;
-    // }
-    // console.log('合计:'+sum+'\n个数:'+quantity+'均值:'+sum/quantity);
-    //------------------------------------------------------------------
-    // var row=prompt('请输入行数：');
-    // var column=prompt('请输入列数：');
-    // var star='';
-    // for(var i=1;i<=row;i++)
-    // {
-    //     for(j=i;j<=column;j++)
-    //     {
-    //         star+='⭐'
-    //     }
-    //     star+='\n'
-        
-    // }
-    // console.log(star);
-    //------------------------------------------------------------------
-    // var row=prompt('请输入行数：');
-    // var column=prompt('请输入列数：');
-    // var star='';
-    // for(var i=1;i<=row;i++)
-    // {
-    //     for(j=i;j<=column;j++)
-    //     {
-    //         star+='⭐'
-    //     }
-    //     star+='\n'
-    //     console.log(star);
-    // }
-    
-    //------------------------------------------------------------------
-    // var row=prompt('请输入行数：');
-    // var column=prompt('请输入列数：');
-    // var star='';
-    // for(var i=1;i<=row;i++)
-    // {
-    //     for(j=1;j<=column;j++)
-    //     {
-    //         star+='⭐'
-    //     }
-    //     star+='\n'
-        
-    // }
-    // console.log(star);
-    //------------------------------------------------------------------
-    // var row=prompt('请输入行数：');
-    // var column=prompt('请输入列数：');
-    // var star='';
-    // for(var i=1;i<=row;i++)
-    // {
-    //     for(j=i;j<=column;j++)
-    //     {
-    //         star+='⭐'
-    //     }
-    //     star+='\n'
-        
-    // }
-    // console.log(star);
-    //------------------------------------------------------------------
-    // var str='';
-    // for(i=1;i<=9;i++)
-    // {
-    //     for(j=i;j<=9;j++)
-    //     {
-    //         str+=i+'*'+j+'='+i*j+'\t';
-    //     }
-    //     str+='\n';
-
-    // }
-    // console.log(str)
-    //------------------------------------------------------------------
-    // do{
-    //     var user=prompt('请输入用户名：');
-    //     var password=prompt('请输入'+user+'的密码：');
-    // } while(user!=='admin'||password!=='123456')
-    // alert('登录成功！欢迎'+user);
-    //------------------------------------------------------------------
-    // var sum=0;
-    // var quantity=0;
-    // for(var i=1;i<=100;i++)
-    // {
-    //     if((i-3)%10==0)
-    //     {
-    //         continue;
-    //     }
-    //     console.log(i);
-    //     quantity+=1;
-    //     sum+=i;
-    // }
-    // console.log('合计:'+sum+'\n个数:'+quantity+'均值:'+sum/quantity);
-    //------------------------------------------------------------------
-    // var sum=0;
-    // var quantity=0;
-    // for(var i=1;i<=100;i++)
-    // {
-    //     if((i-3)%10!==0)
-    //     {
-    //         continue;
-    //     }
-    //     console.log(i);
-    //     quantity+=1;
-    //     sum+=i;
-    // }
-    // console.log('合计:'+sum+'\n个数:'+quantity+'均值:'+sum/quantity);
-    //------------------------------------------------------------------
-    // var amount=100;
-    // do{
-    // var choice=prompt('请输入你的操作：\n 1.存钱 \n 2.取钱 \n 3.显示余额 \n 4.退出');
-    // if (choice==1)
-    // {
-    //     amount+=parseFloat(prompt('请输入存入金额：'));
-    //     alert('目前余额：'+amount);
-    // }
-    // else if(choice==2)
-    // {
-    //     amount-=parseFloat(prompt('请输入取出金额：'));
-    //     alert('目前余额：'+amount);
-    // }
-    // else if(choice==3)
-    // {
-    //     alert('目前余额：'+amount);
-    // }
-    // } while (choice!=4)
-    // alert('退出成功！');
-
-   //------------------------------------------------------------
-//    var arr=['星期一','星期二','星期三','星期四','星期五','星期六','星期天'] ;
-//    console.log(arr[6]);
-//------------------------------------------------------------------
-    // var arr=[2,6,1,7,4];
-    // var sum=0;
-    // for(var i=0;i<arr.length;i++)
-    // {
-    //     sum+=arr[i];
-    // }
-    // console.log('合计：'+sum+'\n 均值：'+sum/arr.length);
-   //------------------------------------------------------------------
-    // var arr=[2,6,1,77,52,25,7];
-    // var max=arr[0];
-    // for(var i=0;i<arr.length;i++)  //i=1 可以减少比较次数
-    // {
-        
-    //     if(max<arr[i])
-    //     {
-    //         max=arr[i];
-    //     }
-    // }
-    // console.log(max);
-    //------------------------------------------------------------------
-    // var arr=['red','green','blue','pink'];
-    // var str='';
-    // for (var i = 0 ;i<arr.length;i++)
-    // {
-    //     str+=arr[i]+'|';
-    // }
-    // console.log(str);
-    //------------------------------------------------------------------
-    // var arr=[2,0,6,1,77,0,52,0,25,7];
-    // var arr1=[];
-    // for (var i=0;i<arr.length;i++)
-    // {
-    //     if(arr[i]!=0)
-    //     {
-    //         arr1[arr1.length]=arr[i];
-    //     }
-    // } 
-    // console.log(arr1);
-
-    // var arr2=['red','green','blue','pink','purple'];
-    // var arr3=[];
-    // for (var i = 0 ;i < arr2.length; i++)
-    // {
-    //     arr3[arr2.length-i-1]=arr2[i];
-    // }
-    // console.log(arr2);
-    // console.log(arr3);
-
-    // var arr4=['red','green','blue','pink','purple'];
-    // var arr5=[];
-    // for (var i = arr4.length-1 ;i >= 0; i--)
-    // {
-    //     arr5[arr5.length]=arr4[i];
-    // }
-    // console.log(arr4);
-    // console.log(arr5);
-    //------------------------------------------------------------------
-    //冒泡排序
-    // var arr=[2,0,6,1,77,0,52,0,25,7];
-    // for (var i = 0 ; i <= arr.length-1; i++)
-    // {
-    //     //for(var j = 0 ;j<=arr.length-1-i;j++)
-    //     for(var j = arr.length-1;j>=0;j--)
-    //     {
-    //         if(arr[j]<arr[j+1])
-    //         {
-    //             var temp =arr[j];
-    //             arr[j]=arr[j+1];
-    //             arr[j+1]=temp;
-    //         }
-    //     }
-    // }
-    // console.log(arr);
-    //------------------------------------------------------------------
-    // function getSum()
-    // {
-    //     var num1=parseFloat(prompt('请输入第一个数：'));
-    //     var num2=parseFloat(prompt('请输入第二个数：'));
-    //     var sum=num1+num2;
-    //     alert('相加之和为：'+sum);
-    // }
-    // function getSum1(num1,num2)
-    // {
-    //     var sum=0;
-    //     sum=num1+num2;
-    //     alert('相加之和为：'+sum);
-    // }
-
-    // getSum1(11,100);
-    //------------------------------------------------------------------
-    // function getMax(num1,num2)
-    // {
-    //     if(num1>=num2)
-    //     {
-    //         return num1;
-    //     }
-    //     else
-    //     {
-    //         return num2;
-    //     }
-    // }
-    // console.log(getMax(76,111));
-
-    // function getMax1(num1,num2)
-    // {
-    //     return num1>num2 ? num1:num2; //三元表达式判断大小
-    // }
-    // console.log(getMax1(12,87));
-    //------------------------------------------------------------------
-    // function getArrayMax()
-    // {
-    //     var arr=[5,2,99,101,67,77];
-    //     var max=arr[0];
-    //     for (var i=1;i<arr.length;i++)
-    //     {
-    //         if(arr[i]>max)
-    //         {
-    //             max=arr[i];
-    //         }
-    //     }
-    //     return max;
-    // }
-    // console.log(getArrayMax());
-
-    // function getArrayMax1(arr)
-    // {
-    //     var max=arr[0];
-    //     for (var i=1;i<arr.length;i++)
-    //     {
-    //         if(arr[i]>max)
-    //         {
-    //             max=arr[i];
-    //         }
-    //     }
-    //     return max;
-    // }
-    // console.log(getArrayMax1([5,2,99,101,67,77]));
-    // var result=getArrayMax1([5,2,99,101,67,77]);
-    // console.log(result);
-    //------------------------------------------------------------------
-    // function cal()
-    // {
-    //     var num1=parseFloat(prompt('请输入第一个数：'));
-    //     var opr=prompt('请选择运算符：\n 1.+\n 2.-\n 3.*\n 4./');
-    //     var num2=parseFloat(prompt('请输入第二个数：'));
-    //     if (opr==1)
-    //     {
-    //         return num1+'+'+num2+'='+num1+num2;
-    //     }
-    //     else if (opr==2)
-    //     {
-    //         return num1+'-'+num2+'='+num1-num2;
-    //     }
-    //     else if (opr==3)
-    //     {
-    //         return num1+'*'+num2+'='+num1*num2;
-    //     }
-    //     else if (opr==4)
-    //     {
-    //         return num1+'/'+num2+'='+num1/num2;
-    //     }
-    // }
-    // alert(cal());
-    //------------------------------------------------------------------
-    // function getMax()
-    // {
-    //     var num1=parseFloat(prompt('请输入第一个数：'));
-    //     var num2=parseFloat(prompt('请输入第二个数：'));
-    //     if(num1>num2)
-    //     {
-    //         return num1+'较大';
-    //     }
-    //     else
-    //     {
-    //         return num2+'较大';
-    //     }
-    // }
-    // alert(getMax());
-    //------------------------------------------------------------------
-    // function getMax1()
-    // {
-    //     var num1=parseFloat(prompt('请输入第一个数：'));
-    //     var num2=parseFloat(prompt('请输入第二个数：'));  
-    //     var num3=parseFloat(prompt('请输入第三个数：'));  
-    //     if (num1>num2)
-    //     {
-    //         if(num1>num3)
-    //         {
-    //             return '输入的第一个数：'+num1+'较大';
-    //         }
-    //         else
-    //         {
-    //             return '输入的第三个数：'+num3+'较大';
-    //         }
-    //     } 
-    //     else
-    //     {
-    //         if(num1>num3)
-    //         {
-    //             return '输入的第二个数：'+num2+'较大';
-    //         }
-    //         else
-    //         {
-    //             if(num2<num3)
-    //             {
-    //                 return '输入的第三个数：'+num3+'较大';
-    //             }
-    //             else
-    //             {
-    //                 return '输入的第二个数：'+num2+'较大';
-    //             }
-    //         } 
-            
-
-    //     }
-    // }
-    // alert(getMax1());
-    // function getMax2()
-    // {
-    //     var arr=[];
-    //     arr[0]=parseFloat(prompt('请输入第一个数：'));
-    //     arr[1]=parseFloat(prompt('请输入第二个数：'));  
-    //     arr[2]=parseFloat(prompt('请输入第三个数：'));  
-    //     var max=arr[0];
-    //     console.log(arr);
-    //     for (var i=1;i<arr.length;i++)
-    //     {
-    //         if(arr[i]>max)
-    //         {
-    //             max=arr[i];
-                
-    //         }
-    //     }
-    //     var index=arr.indexOf(max)+1;
-    //     return '最大值为第'+index+'个数：'+max;
-    // }
-    // alert(getMax2());
-    //------------------------------------------------------------------
-    // function cal()
-    // {
-    //     var num1=parseFloat(prompt('请输入一个数：'));
-    //     var j=0;
-    //     for(i=1;i<=num1;i++)
-    //     {
-            
-    //         if(num1%i==0)
-    //         {
-    //             j++;
-    //         }
-    //     }
-    //     if (j==2)
-    //     {
-    //         return num1+'是质数/素数'
-    //     }
-    //     else
-    //     {
-    //         return num1+'不是质数/素数'
-    //     }
-    // }
-    // alert(cal());
-    //------------------------------------------------------------------
-    // function getMax()
-    // {
-    //     var max=arguments[0];
-    //     for (var i=1;i<arguments.length;i++)
-    //     {
-    //         if (arguments[i]>max)
-    //         {
-    //             max=arguments[i];
-    //         }
-    //     }
-    //     return max;
-    // }
-
-    // console.log(getMax(1,2,3,4,5));
-    // console.log(getMax(1,7,3,4,5));
-    // console.log(getMax(1,234,567,4,5,37798));
-    // console.log(getMax(1,2,3,4,5,90,808));
-    //------------------------------------------------------------------
-    // function getNewOrder()
-    // {
-    //     var arr=[];
-    //     for (var i=arguments.length-1;i>=0;i--)
-    //     {
-    //         arr[arr.length]=arguments[i]
-    //     }
-    //     return arr;
-    // }
-
-    // console.log(getNewOrder(1,2,3,4,5));
-    // console.log(getNewOrder(1,7,3,4,5));
-    // console.log(getNewOrder(1,234,567,4,5,37798));
-    // console.log(getNewOrder(1,2,3,4,5,90,808));
-    //------------------------------------------------------------------
-    // function getOrder()
-    // {
-    //     var arr=[];
-    //     for(var i=0;i<arguments.length;i++)
-    //     {
-    //         for(var j=arguments.length-1;j>=0;j--)
-    //         {
-    //             if(arguments[j-1]<arguments[j])
-    //             {
-    //                 var num=arguments[j-1];
-    //                 arguments[j-1]=arguments[j];
-    //                 arguments[j]=num;
-    //             }
-    //         }
-    //     }
-    //     return arguments;
-    // }
-    // console.log(getOrder(1,2,3,4,5));
-    // console.log(getOrder(1,7,3,4,5));
-    // console.log(getOrder(1,234,567,4,5,37798));
-    // console.log(getOrder(1,2,3,4,5,90,808));
-    //------------------------------------------------------------------
-    // function fun1(year)
-    // {
-    //     var flag;
-    //     if(year%4==0&&year%100!=0||year%400==0)
-    //     {
-    //         return flag=true;
-    //     }
-    //     else
-    //     {
-    //         return flag=false;
-    //     }
-    // }
-    // console.log(fun1(2032));
-    // console.log(fun1(2000));
-    // console.log(fun1(2004));
-
-    // function fun2(year)
-    // {
-    //     var flag;
-    //     if(year%4==0&&year%100!=0||year%400==0)
-    //     {
-    //         return flag=true;
-    //     }
-    //     else
-    //     {
-    //         return flag=false;
-    //     }
-    // }
-    // function fun3(year1)
-    // {
-    //     if (fun2(year1)===true)
-    //     {
-    //         return year1+'年2月有29天';
-    //     }
-    //     else
-    //     {
-    //         return year1+'年2月有28天';
-    //     }
-    // }
-    // console.log(fun3(2000));
-    // console.log(fun3(1999));
-    // console.log(fun3(2004));
-    
-    //------------------------------------------------------------------
-    //函数关键字声明函数  命名函数
-    //函数表达式声明函数  匿名函数
-    // var fun=function()
-    // {
-    //     console.log('函数表达式');
-    // }
-    // fun();
-    //------------------------------------------------------------------
-    // var num=10;
-    // function fn()
-    // {
-    //     console.log(num);
-    //     var num=20;
-    //     console.log(num);
-    // }
-    // fn();
-    //------------------------------------------------------------------
-    // fn();
-    // console.log(c);
-    // console.log(b);
-    // console.log(a);
-    // function fn()
-    // {
-    //     var a=b=c=9;
-    //     console.log(a);
-    //     console.log(b);
-    //     console.log(c);
-    // }
-    //相当于以下代码
-    // function fn()
-    // {
-    //     var a=b=c=9;  // 相当于 var a=9;b=9;c=9; （函数内部没声明变量赋值的相当于全局变量）  与 var a=9,b=9,c=9; 有区别
-    //     //b和c都是全局变量
-    //     console.log(a);
-    //     console.log(b);
-    //     console.log(c);
-    // }
-    // fn();
-    // console.log(c);
-    // console.log(b);
-    // console.log(a);
-    //------------------------------------------------------------------
-    //对象
-    // var obj={
-    //     name:'zwj',
-    //     sex:'男',
-    //     age:20,
-    //     sayHi:function(){
-    //         console.log('hi');
-    //     }
-    // }
-    // console.log(obj.name);
-    // console.log(obj['sex']);
-    // obj.sayHi();
-    // console.log(obj);
-
-    // var objDog={
-    //     name:'可可',
-    //     type:'阿拉斯加犬',
-    //     age:5,
-    //     color:'棕红色',
-    //     sayWang:function(){
-    //         console.log('汪汪汪');
-    //     },
-    //     showFilm:function(a){
-    //         //var a;
-    //         console.log(a);
-    //     }
-    // }
-    // objDog.sayWang();
-    // objDog.showFilm(1)
-
-    // var objT = new Object;
-    // objT.name='张三丰';
-    // objT.sex='男';
-    // objT.age=208;
-    // objT.daTaiji=function(){
-    //     alert('张三丰正在打太极');
-    // }
-    // console.log(objT.name);
-    // objT.daTaiji();
-    //------------------------------------------------------------------
-    //构造函数
-    // function Obj(name,sex,age){
-    //     this.name=name;
-    //     this.sex=sex;
-    //     this.age=age;
-    //     this.sing=function(song){
-    //         console.log(song);
-    //     }
-        
-    // }
-    // var zwj =new Obj('zwj','男',22);
-    // console.log(zwj);
-    
-    // var zzw =new Obj('zwj','男',22,'好汉歌');
-    // console.log(zzw);
-    // zzw.sing('毫安个');
-    //------------------------------------------------------------------
-    // function Hero(name,type,blood,attack){
-    //     this.name=name;
-    //     this.type=type;
-    //     this.blood=blood;
-    //     this.attack=function(attack){
-    //         console.log(name+'是'+attack+'英雄');
-    //     }
-    // }
-    // var lianpo=new Hero('廉颇','力量型','500血量','近战');
-    // var houyi=new Hero('后羿','射手型','100血量');
-    // lianpo.attack('近战');
-    // console.log(houyi);
-
-    // var obj={
-    //     name:'zwj',
-    //     sex:'男',
-    //     age:20
-    // }
-    // console.log(obj['name']);
-    // for (var k in obj){
-    //     console.log(k);
-    //     console.log(obj[k]);
-        
-    // }
-    //------------------------------------------------------------------
-    //创建对象
-    // function ObjPc(color,weigth,brand,type){
-    //     this.color=color;
-    //     this.weigth=weigth;
-    //     this.brand=brand;
-    //     this.type=type;
-    //     this.watchMovie=function(movie){
-    //         console.log('you can watch '+movie+' through software');
-    //     };
-    //     this.listenMusic=function(music){
-    //         console.log('you can listen '+music+' through software');
-    //     };
-    //     this.playGame=function(game){
-    //         console.log('you can play'+game+' through steam');
-    //     };
-    //     this.editCode=function(code){
-    //         console.log('you cam edit'+code+' through programming software');
-    //     }
-
-    // }
-    // var pc=new ObjPc('black','2kg','Alienware','PC');
-    // console.log(pc);
-    // pc.listenMusic('my heart will go on');
-    // pc.playGame('Grand Theft Auto VI');
-    // for(var k in pc){
-    //     console.log(k);
-    //     console.log(pc[k]);
-    // }
-
-    // function ObjBtn(weigth,heigth,bgcolor){
-    //     this.weigth=weigth;
-    //     this.heigth=heigth;
-    //     this.bgcolor=bgcolor;
-    //     this.kickBtn=function(kick){
-    //         console.log(kick+' button');
-    //     }
-    // }
-    // var btn=new ObjBtn('200','300','black');
-    // console.log(btn);
-    // btn.kickBtn('kick');
-    // for(k in btn){
-    //     console.log(k);
-    //     console.log(btn[k]);
-    // }
-
-    // function ObjCar(weigth,color,brand){
-    //     this.weigth=weigth;
-    //     this.color=color;
-    //     this.brand=brand;
-    //     this.driveSb=function(sb){
-    //         console.log('you can drive '+sb+' to where she/he wanted');
-    //     };
-    //     this.deliveGoods=function(goods){
-    //         console.log('you can delive'+goods+'by me');
-    //     };
-    //     this.farming=function(farming){
-    //         console.log('you can '+farming+' by me');
-    //     }
-
-    // }
-    // var car=new ObjCar('2000kg','black','BYD');
-    // console.log(car);
-    // car.driveSb('your girlfriends');
-    // for(k in car){
-    //     console.log(k);
-    //     console.log(car[k]);
-    // }
-    //------------------------------------------------------------------
-    //函数练习
-    // var reverse=function(arr){
-    //     var newArr=[];
-    //     for(i =0;i<arr.length;i++){
-    //         newArr[arr.length-i-1]=arr[i];
-    //     }
-    //     return newArr;
-    // }
-    // console.log(reverse(['red','green','black','white','blue']));
-    // var arr1=[2,3,4,5,6,7,8,9,10];
-    // console.log(reverse(arr1));
-
-    // function getOrder(arr){
-        
-    //     for(i=0;i<=arr.length-1;i++){
-    //         for(j=0;j<=arr.length-1-i;j++){
-    //             if(arr[j]>arr[j+1]){
-    //                 var max=arr[j];
-    //                 arr[j]=arr[j+1];
-    //                 arr[j+1]=max;
-    //             }
-    //         }
-    //     }
-    //     return arr;
-    // }
-    // var arr2=[2,4,3,1,6,88,23,0];
-    // console.log(getOrder(arr2));
-    // var arr3=[89,333,121,1,453,5,4,3];
-    // console.log(getOrder(arr3));
-    // 
-    //------------------------------------------------------------------
-    //内置对象 math
-    // console.log(Math.PI);
-    // console.log(Math.max(2,3,7,123,[333,2,1]));
-    // console.log(Math.max(2,3,4,888,...[333,2,1]));
-    // console.log(Math.max(2,3,7,123));
-
-    // var myMath={
-    //     PI:Math.PI,
-    //     max:function(){
-    //         var max=arguments[0];
-    //         for(i=1;i<=arguments.length-1;i++){
-    //             if(arguments[i]>max){
-    //                 max=arguments[i];
-    //             }
-    //         }
-    //         return max;
-    //     },
-    //     min:function(){
-    //         var arr=[];
-    //         return Math.min(arr);
-    //     }
-    // }
-    // console.log(myMath.PI);
-    // console.log(myMath.max(1,2,5));
-    // console.log(myMath.min(3,2,5));
-    // console.log(myMath.min([3,2,5]));
-    // console.log(myMath.min(1,2,5,...[23,4,3,2]));    
-    // console.log(myMath.min(3,2,5,...[23,4,3,-1]));
-
-
-    // console.log(Math.floor(1.0));
-    // console.log(Math.ceil(1.0));
-    // console.log(Math.round(1.0));
-    // console.log(Math.round(-1.5));
-    // console.log(Math.round(-2.5));
-    // console.log(Math.round(-1.4));
-    // console.log(Math.round(-1.6));
-    // console.log(Math.floor(-1.5));
-    // console.log(Math.floor(-1.4));
-    // console.log(Math.ceil(-1.5));
-    // console.log(Math.ceil(-1.4));
-    // console.log(Math.floor((Math.random()*10)));
-    
-    //------------------------------------------------------------------
-    //猜数字小游戏
-    // function getRandom(min,max){
-    //     return Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1) + Math.ceil(min) );
-    // }
-    // var num=getRandom(1,10);
-    // var guess=parseInt(prompt('请输入一个0-10的整数：'));
-    // while(guess!=num){
-    //     if(guess>num){
-    //     guess=parseInt(prompt('猜大了!\n请重新输入一个0-10的整数：'))
-    //     }
-    //     else if(guess<num){
-    //     guess=parseInt(prompt('猜小了!\n请重新输入一个0-10的整数：'))
-    //     }
-    // }
-    // alert('答对了，答案就是'+num);
-    
-    //猜数字小游戏2
-    // function getRandom(min,max){
-    //     return Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1) + Math.ceil(min) );
-    // }
-    // while(true){
-        
-    //     var min=parseInt(prompt('输入整数，设置猜数字范围下限值(包含)'));
-    //     var max=parseInt(prompt('输入整数，设置猜数字范围上限值(包含)'));
-    //     if(max>min&&max>=0&&min>=0){
-    //         break;
-    //     }
-    //     else{
-    //         alert('上限值小于下限值或者输入为负值，请重新输入');
-    //     }
-    // }
-    // while(true){
-    //     var chance=parseInt(prompt('输入整数，设置猜数字的次数：'));
-    //     if(chance>0){
-    //         break;
-    //     }
-    //     else{
-    //         alert('次数必须大于0，请重新输入次数');
-    //     }
-    // }
-    // var num=getRandom(min,max);
-    // var guess=parseInt(prompt('请输入一个'+min+'-'+max+'的整数：'));
-    // var i=0;
-    // while(true){
-    //     i++;
-    //     if(i<=chance){
-    //         if(guess>num){
-    //         guess=parseInt(prompt('已猜了'+i+'次\n猜大了!\n请重新输入一个'+min+'-'+max+'的整数：'))
-            
-    //         }
-    //         else if(guess<num){
-    //         guess=parseInt(prompt('已猜了'+i+'次\n猜小了!\n请重新输入一个'+min+'-'+max+'的整数：'))
-            
-    //         }
-    //         else{
-    //             alert('恭喜你答对了，是数字'+guess+'\n累计猜的次数为：'+i);
-    //             break;
-    //         }
-        
-    //     }
-    //     else{
-    //         alert('次数用完，下次继续努力');
-    //         break;
-    //     }
-        
-    // }
-
-    //------------------------------------------------------------------
-    // Date() 日期对象 是一个构造函数 使用new来创建日期对象
-
-    // var date=new Date();
-    // console.log(date);
-    // var date1=new Date('2024-10-1');
-    // console.log(date1);
-    // var date2=new Date(2024,10,1);
-    // console.log(date2);
-    // var date3=new Date();
-    // console.log(date3.getFullYear());
-    // console.log('今天是'+date3.getFullYear()+'年'+(parseInt(date3.getMonth())+1)+'月'+date3.getDate()+'日 星期'+(date3.getDay()==0 ? '天':date3.getDay()));
-    // var date4=new Date('2024-9-8');
-    // var day=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
-    // console.log('今天是'+date4.getFullYear()+'年'+(date4.getMonth()+1)+'月'+date4.getDate()+'日 星期'+(date4.getDay()==0 ? '天':date4.getDay()));
-    //------------------------------------------------------------------
-    function getTime1(){
-        var time=new Date();
-        var h = time.getHours();
-        h = h<10 ? '0'+h:h;
-        var m = time.getMinutes();
-        m = m<10 ? '0'+m:m;
-        var s = time.getSeconds();
-        s = s<10 ? '0'+s:s;
-        return h + ':' + m + ':' + s;
-    }
-    console.log(getTime1());
-
-    //离 1970年1月1日 累计毫秒数  时间戳
-    var sec = new Date();
-    console.log(sec.getTime());
-    console.log(sec.valueOf());
-    console.log(Date.now());
-
-    var date='2024-9-9 00:00:00'
-    var sec1=+new Date(date);
-    console.log(sec1);
-    var secNow=+ new Date();
-    var min = sec1-secNow;
-    var d=Math.floor(min/(1000*60*60*24));
-    var h=Math.floor(min/(1000*60*60)%24);
-    var m=Math.floor(min/(1000*60)%60);
-    var s=Math.floor(min/(1000)%60);
-    d=d<10 ? '0'+d:d;
-    h=h<10 ? '0'+h:h;
-    m=m<10 ? '0'+m:m;
-    s=s<10 ? '0'+s:s;
-    console.log(date+'距离现在还剩'+d+'天'+h+'时'+m+'分'+s+'秒')
-
-    console.log(parseInt(15.8,10));// parseInt(数值,进制) 进制默认为十进制
-    //------------------------------------------------------------------
-    //数组去重  方法1
-    
-    function getOnly(arr){
-        var arr1=[];
-        for(var i=0;i<=arr.length-1;i++){
-            if(i<=arr.indexOf(arr[i])){
-                arr1.push(arr[i]);
-            }
-        }
-        return arr1;
-    }
-     //数组去重  方法2
-     function getOnly2(arr){
-        var arr1=[];
-        for(var i=0;i<=arr.length-1;i++){
-            if(arr1.indexOf(arr[i])==-1){  //indexOf(数组元素)==-1时 说明数组中不存在该数组元素
-                arr1.push(arr[i]);
-            }
-        }
-        return arr1;
-     }
-     var arr=[3,2,4,1,5,4,3,6,2,7,1,8,9,1];
-    console.log(arr);
-    var arr2=['a','a','c','b','c','d','f','g','b','b','e'];
-    console.log(getOnly(arr));
-    console.log(getOnly2(arr));
-    console.log(getOnly(arr2));
-    console.log(getOnly2(arr2));
-
-    //数组转换为字符串
-    console.log(arr2.toString());
-    console.log(arr2.join());
-    console.log(arr2.join('-'));
-    console.log(arr2.join('&'));
-    // concat();连接两个或多个数组 返回一个新数组 不影响原数组 
-    console.log(arr.concat(arr2,arr));
-    console.log(arr);
-    // splice();数组删除 splice(第几个开始,要删除的个数) 返回被删除项目的新数组 会影响原数组
-    console.log(arr);
-    console.log(arr.splice(1,7,'ss')); //splice(第几个开始(不包含),删除个数，提法内容(如果没有相当于删除))
-    console.log(arr);
-    console.log(arr.splice(0,0,'xx'));
-    console.log(arr);
-    // slice();数据截取 slice(begin,end) 返回被截取项目的新数组 不影响原数组
-    console.log(arr2);
-    console.log(arr2.slice(1,7)); //slice(第几个开始,结束位置)
-    console.log(arr2);
-    //------------------------------------------------------------------
-    //基本包装类型：将简单数据类型包装成了复杂数据类型
-    //
-    var str='pink';
-    console.log(str.length);
-    //1.把简单数据类型包装成复杂数据类型
-    var temp=new String('pink');
-    //2.把临时变量赋值给str
-    str=temp;
-    //3.销毁这个临时变量
-    temp=null;
-
-    //------------------------------------------------------------------
-    //字符串不可变，内存空间不会消失
-    //不要大量拼接字符串，否则导致内存空间占用过多
-    //字符串的所有方法，都不会改变字符串本身(字符串是不可变的)，操作完成会返回一个新的字符串(新开辟内存空间)
-    //------------------------------------------------------------------
-    var str1='你是一个大傻逼';
-    console.log(str1.indexOf('大'));
-    //indexOf('要查找的字符',[起始位置])
-    console.log(str1.indexOf('大',4));
-    console.log(str1.indexOf('大',5));
-    console.log(str1.lastIndexOf('大'));    
-    console.log(str1.lastIndexOf('大',0));
-    console.log(str1.lastIndexOf('大',1));
-    console.log(str1.lastIndexOf('大',2));
-    console.log(str1.lastIndexOf('大',3));
-    console.log(str1.lastIndexOf('大',4));
-    console.log(str1.lastIndexOf('大',str1.length));
-    
-    //返回字符串的位置及出现次数
-    function returnStr(str){
-        var arr=[];
-        var num=0;
-        var j=str.indexOf('o');
-        for(i=0;i<=str.length;i++){
-            if(j<i){  //if(j!==-1){
-                arr.push(str.indexOf('o',j));
-                num++;
-                j=str.indexOf('o',j+1);
-
-            }
-        }
-        return '出现位置为'+arr+'\出现次数为'+num;
-    }
-    //或者用while循环
-    function returnStr1(str){
-        var index=str.indexOf('o');
-        var num=0;
-        var arr=[];
-        while(index!==-1){
-            arr.push(index);
-            num++;
-            index=str.indexOf('o',index+1);
-        }
-        return '出现位置为'+arr+'\出现次数为'+num;
-    }
-    var str2='saodosdfdfdodsdado';
-    console.log(returnStr(str2));
-    
-    console.log(returnStr1(str2));
-    
-
-    //------------------------------------------------------------------
-    var str3='你是一个大傻逼a'
-    //charAt(index) 根据index返回字符
-    console.log(str3.charAt(str3.length-1));
-    //charCodeAt(index) 根据index返回字符对应的ASCII码 用于判断用户按键
-    console.log(str3.charCodeAt(str3.length-1));
-    //str[index]  H5新增的 跟据index返回字符 与charAt(index)等效
-    console.log(str3[str3.length-1]);
-    //------------------------------------------------------------------
-    var obj={
-        name:'123'
-    }
-    if(obj['name']){
-        console.log('有该属性');
-    } else {
-        console.log('没有该属性');
-    }
-    //------------------------------------------------------------------
-    //求字符串中出现最多的字符和次数
-    var str='sdhadjwshdfaisjdasdkf';
-    var obj={};
-    for (var i=0;i<str.length;i++){
-        var chars=str.charAt(i);
-        if(obj[chars]){
-            obj[chars]++;
-        } else {
-            obj[chars]=1;
-        }
-    }
-    console.log(obj);
-    var max=0;
-    var ch='';
-    for (var k in obj){
-        if(obj[k]>max){
-            max=obj[k];
-            ch=k;
-        }
-    }
-    console.log(max);
-    console.log(ch);
-    //求字符串中出现最多的字符和次数
-    var str='sdhsadjwshdfaisjdasdkf';
-    var obj = {};
-    
-    for( i =0 ;i<str.length;i++){
-        var chars=str.charAt(i);
-        if(obj[chars]){
-            obj[chars]++;
-        } else {
-            obj[chars]=1;
-        }
-    }
-    console.log(obj);
-    var max1=0;
-    var num1='';
-    for (var k in obj){
-        if(obj[k]>max1){
-            max1=obj[k];
-            num1=k;
-        }
-    }
-    console.log(max1);
-    var arr1=[];
-    for (var k in obj){
-        if(obj[k]==max1){
-            arr1.push(k);
-        }
-    }
-    console.log('字符串'+str+'中出现次数最多的字符有'+arr1+'次数为'+max1);
-    //------------------------------------------------------------------
-    var str4='sdasdffd';
-    console.log(str4.substr(2,3));
-    console.log(str4.replace('dasdff','a'));
-    console.log(str4.replace('d','a'));   //str.replace() 只替换匹配的第一个字符串
-    
-    // for (var i=0;i<str4.length;i++){   //使用for循环实现
-    //     str4=str4.replace('d','a');
-    // }
-    while(str4.indexOf('d')!==-1){        //使用while循环实现
-        str4=str4.replace('d','a');
-    }
-    console.log(str4);
-    
-    //------------------------------------------------------------------
-    //str.split()  和 str.join()
-    var arr=['a','b','c','d','e','f'];
-    var str5='a,b,c,d,e,f'
-    var str6='a&b&c&d&e&f'
-    console.log(arr.join('&'));
-    console.log(str5.split(','));
-    console.log(str6.split('&'));
-    //
-    //------------------------------------------------------------------
-    //简单数据类型和复杂数据类型
-    //简单数据类型 string , number , blooean , undefined , null
-    //简单数据类型 null 返回的是一个空的对象    
-    var timer=null;
-    console.log(typeof timer);
-    // 如果有个变量我们以后打算存储一个对象，暂时没想好放什么，可以赋值null
-    //复杂数据类型 Object , Array , Date
-    //两种数据类型的内存分配方式不一样
-    //堆和栈  
-    // 栈：由操作系统自动分配释放存放函数的参数值，局部变量的值等，其操作方式类似于数据结构中的栈；简单数据类型存储在栈里
-    //简单数据类型 是存放在栈里 里面直接开辟一个内存空间存放的是值
-    
-    // 堆：一般由程序员分配释放，若程序员不释放，由垃圾回收机制回收；复杂数据类型存储在堆里
-    //复杂数据类型 首先在栈里存放一个十六进制的地址 这个地址指向堆里的值
-
-    //简单数据类型和复杂数据类型传参的不同
-    //简单数据类型
-    //函数的形参也可以看作是一个变量，当我们把一个值类型变量作为参数传给函数的形参时，其实是把变量在栈空间的值复制了一份给形参，那么在方法内部对形参做任何修改，都不会影响到外部的变量
-
-    //复杂数据类型
-    //函数的形参也可以看作是一个变量，当我们把引用类型变量传给形参时，其实是把变量在栈空间里保存的地址复制给了形参，形参和实参保存的是同一个堆地址，所操作的是同一个对象
-    //------------------------------------------------------------------
-    //------------------------------------------------------------------
-    //------------------------------------------------------------------
-    //------------------------------------------------------------------
-    //------------------------------------------------------------------
-
-    
-
-
-</script>
-
 </head>
 <body>
-	
-<h1>我的第一个 JavaScript</h1>
+    <button onclick="myFunction()">点我</button>
+    <script>
+        // var num1=18;
+        // var num2=24;
+        // var num3;
+        // num3=num1;
+        // num1=num2;
+        // num2=num3;
+        // alert(num1+','+num2);
+//-------------------------------------------------------------- 
+        // var yourname=prompt('输入姓名');
+        // var sex=prompt('性别');
+        // var age=prompt('年龄');
+        // alert('你的名字是：'+yourname+'\n你的性别：'+sex+'\n你的年龄'+age);
+        //-------------------------------------------------------------- 
+        // var num=prompt('请输入学生人数:');
+        // var sum=0;
+        // for(var i=1;i<=num;i++)
+        // {
+        //     var score=prompt('请输入第'+i+'个学生成绩:');
+        //     sum+=Number(score);//sum+=parseFlost(score)
+        // }
+        // alert('总成绩为:'+sum+'\n平均成绩为:'+sum/num);
+//-------------------------------------------------------------- 
+        // var num=prompt('请输入🌟数量:');
+        // var star='';
+        // for(var i=1;i<=num;i++)
+        // {
+        //     star+='🌟';
+        // }
+        // console.log(star);
+ //-------------------------------------------------------------- 
+        // var coloum=prompt('请输入行数:');
+        // var row=prompt('请输入列数:');
+        // var star1='';
+        // for(j=1;j<=row;j++)
+        // {
+        //     star1+='🌟';
+        // }  
+        // for(i=1;i<=coloum;i++)
+        // {     
+        //     console.log(star1);
+        // }
+//-------------------------------------------------------------- 
+        // var arr = ['red','green','gray'];
+        // var arr1=['red','green','gray','',''];
+        // console.log(arr.length);
+        // arr.length=5;
+        // console.log(arr);
+        // console.log(arr[3]);
+        // console.log(arr[4]);
+        // console.log(arr.toString());
+        // console.log(arr1);
+        // console.log(arr1.toString());
+        // arr1[arr1.length]='new';
+        // arr1[10]='new10';
+        // console.log(arr1);
+        // var arr2=[];
+        // for (i=0;i<10;i++)
+        // {
+        //     arr2[i]=i+1;
+        // }
+        // console.log(arr2);
+        // var arr3=[1];
+        // for (i=0;i<9;i++)
+        // {
+        //     arr3[arr3.length]=arr3[arr3.length-1]+1;
+        // }
+        // console.log(arr3);
+        // var arr4=[2,0,6,1,77,0,52,0,25,7];
+        // var arr5=[];
+        // for (i=0;i<arr4.length;i++)
+        // {
+        //     if(arr4[i]>=10)
+        //     {
+        //         arr5[arr5.length]=arr4[i];
+        //     }
+        // }
+        // console.log(arr4);
+        // console.log(arr5);
+        // var arr6=[2,0,6,1,77,0,52,0,25,7];
+        // var arr7=[];
+        // var j=0;
+        // for (i=0;i<arr6.length;i++)
+        // {
+        //     if(arr6[i]>=10)
+        //     {
+        //         arr7[j]=arr6[i];
+        //         j++;
+        //     }
+        // }
+        // console.log(arr6);
+        // console.log(arr7);
+//-------------------------------------------------------------- 
+//作用域链   就近原则
+// var num = 10;
+// function fn()
+// {
+//     var num=20;
+//     function fun()
+//     {
+//         console.log(num);
+//     }
+//     fun();
+// }
+// fn();
+//-------------------------------------------------------------- 
+// var objPc={
+//     color:'red',
+//     weigth:'100',
+//     band:'Lenovo',
+//     type:'PC',
+//     seeMovie:function(movie){
+//         console.log('seeMovie');
+//     },
+//     listenMusic:function(music){
+//         console.log('listenMusic');
+//     },
+//     playGame:function(game){
+//         console.log('playGame');
+//     },
+//     editCode:function(code){
+//         console.log('editCode');
+//     }
+// }
+// console.log(objPc.band);
+// console.log(objPc);
+// console.log(objPc['type']);
+// objPc.playGame();
+//-------------------------------------------------------------- 
+// 猜数字小游戏
+function myFunction(){
+function getRandom(min,max){
+    return Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1) + Math.ceil(min));
+}
+var random=getRandom(1,100);
+var guess=parseInt(prompt('请输入一个1-100的整数：'));
+while(guess!=random){
+    if(guess>random){
+        guess=parseInt(prompt('猜大了\n请重新输入一个1-100的整数：'));
+    }
+    else if((guess<random)) {
+        guess=parseInt(prompt('猜小了\n请重新输入一个1-100的整数：'));
+    }
+}
+ return alert('猜对了，是数字'+guess);
+}
+//-------------------------------------------------------------- 
+//倒计时
+function countDown(date){
+    var now =+ new Date();//当前时间累计毫秒数
+    var setTime =+ new Date(date);//设定date时间累计毫秒数
+    var times = (setTime - now)/1000;//累计秒数差
+    var d = Math.floor((times/60/60/24));
+    d = d < 10 ? '0' + d : d;
+    var h = Math.floor(times/60/60%24);
+    h = h < 10 ? '0' + h : h;
+    var m = Math.floor(times/60%60);
+    m = m < 10 ? '0' + m : m;
+    var s = Math.floor(times%60);
+    s = s < 10 ? '0' + s : s;
+    return (date + '距现在还剩' + d + '天' + h + '时' + m + '分' + s + '秒');
+}
+console.log(countDown('2024-10-1 00:00:00'));
 
-	
+//-------------------------------------------------------------- 
+var arr1= new Array(2);
+var arr2= new Array('2');
+console.log(arr1);
+console.log(arr2);
+
+var arr2=[];
+var arr3={};
+console.log(arr2 instanceof Array);
+console.log(arr3 instanceof Array);
+
+console.log(Array.isArray(arr2));
+console.log(Array.isArray(arr3));
+// push() 可以在数组末尾 添加一个或多个数组元素
+var arr4 =[1,2,3];
+// arr4[arr4.length]=4;
+// console.log(arr4);
+//arr4.push(5,'zwj');
+console.log(arr4);
+console.log(arr4.push(5,'zwj'));
+
+var arr5=[1,2,3];
+//arr5.unshift(0);
+console.log(arr5);
+console.log(arr5.unshift(0,'zwj'));
+
+var arr6=[1,2,3];
+//arr6.pop();
+console.log(arr6);
+console.log(arr6.pop());
+console.log(arr6);
+
+var arr7=[1,2,3];
+// arr7.shift();
+console.log(arr7);
+console.log(arr7.shift());
+console.log(arr7);
+
+var arr8=[1234,2345,1314,5555,666,888];
+var arr9=[];
+for (i=0;i<arr8.length;i++){
+    if(arr8[i]<2000){
+        // arr9[arr9.length]=arr8[i];
+        arr9.push(arr8[i]);
+    }
+}
+console.log(arr9)
+
+var arr10=[5,6,2,1,4,5];
+var arr11=[1,3,5,7,9,8,6,4,2,0];
+arr10.reverse();
+console.log(arr10);
+arr11.sort();
+console.log(arr11);
+// sort()在 排序两位以上的数字时，需要用下面的语法
+var arr12=[1,5,15,25,35,11,8];
+arr12.sort();
+console.log(arr12);
+arr12.sort(function(a,b){
+    return a-b;//升序，return a-b; 降序 return b-a;
+})
+console.log(arr12);
+
+//数组索引号
+var arr13=['red','blue','gray','yellow','white'];
+var num=arr13.indexOf('yellow');
+console.log(num);
+var arr14=['red','blue','gray','yellow','white','gray'];
+var last=arr14.lastIndexOf('gray');
+var last1=arr14.indexOf('gray');
+console.log(last+'\n'+last1);
+//数组去重
+var arr15=[1,1,1,4,5,3,4,2,4,6];
+var arr16=[];
+for (var i=0;i<=arr15.length-1;i++){
+    if(i<=arr15.indexOf(arr15[i])){
+        //arr16[arr16.length]=arr15[arr15.indexOf(arr15[i])]
+        arr16.push(arr15[arr15.indexOf(arr15[i])]);
+    }
+    
+}
+
+console.log(arr16);
+//-------------------------------------------------------------- 
+
+//字符串操作
+var str='abaasdffggghhjjkkgfddsssss3444343';
+
+//获取字符串的长度
+console.log(str.length);
+//取出指定位置的字符串，如 0,3,5,9
+var arrS=[0,3,5,9];
+for(var i = 0 ; i < arrS.length ; i++){
+    console.log(str.charAt(arrS[i]));
+}
+//查找指定字符是否在以上字符串中存在，如 i,c,b
+var arrB=['i','c','b'];
+for ( var i = 0; i < arrB.length; i++){
+    if (str.indexOf(arrB[i])!==-1){
+        console.log('字符串\''+str+'\'存在字符\''+arrB[i]+'\'');
+    } else{
+        console.log('字符串\''+str+'\'不存在字符\''+arrB[i]+'\'');
+    }
+}
+//替换指定的字符，如 g替换为22，ss替换为b等操作方法
+while(str.indexOf('g')!==-1 && str.indexOf('ss')!==-1){
+    str=str.replace('g','22');
+    str=str.replace('ss','b');
+} 
+console.log(str);
+//截取指定开始位置到结束位置的字符串，如 取得1-5的字符串
+// var startNum=parseInt(prompt('请输入要截取的开始位置：'));
+// var endNum=parseInt(prompt('请输入要截取的截止位置：'));
+// alert('你所截取的字符串为：'+str.substr(startNum-1,endNum-startNum+1));
+//找出以上字符串中出现次数最多的字符和出现次数
+
+//var str='abaasdffggghhjjkkgfddsssss3444343';
+var obj ={};
+var s='';
+var num=0;
+for( var i=0 ; i<str.length;i++){
+    s=str.charAt(i);
+   if(obj[s]){
+    obj[s]++;
+   }
+   else {
+    obj[s]=1;
+   }
+}
+console.log(obj);
+var max=0;
+var ss='';
+for (var k in obj){
+    if(obj[k]>max){
+        max=obj[k];
+        ss=k;
+    }
+}
+console.log(max,ss);
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//-------------------------------------------------------------- 
+//--------------------------------------------------------------                                                             
+        </script>
 </body>
 </html>
