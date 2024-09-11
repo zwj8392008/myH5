@@ -154,6 +154,57 @@ while(guess!=random){
 }
  return alert('猜对了，是数字'+guess);
 }
+//猜数字小游戏2
+// function getRandom(min,max){
+//     return Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1) + Math.ceil(min) );
+// }
+// while(true){
+    
+//     var min=parseInt(prompt('输入整数，设置猜数字范围下限值(包含)'));
+//     var max=parseInt(prompt('输入整数，设置猜数字范围上限值(包含)'));
+//     if(max>min&&max>=0&&min>=0){
+//         break;
+//     }
+//     else{
+//         alert('上限值小于下限值或者输入为负值，请重新输入');
+//     }
+// }
+// while(true){
+//     var chance=parseInt(prompt('输入整数，设置猜数字的次数：'));
+//     if(chance>0){
+//         break;
+//     }
+//     else{
+//         alert('次数必须大于0，请重新输入次数');
+//     }
+// }
+// var num=getRandom(min,max);
+// var guess=parseInt(prompt('请输入一个'+min+'-'+max+'的整数：'));
+// var i=0;
+// while(true){
+//     i++;
+//     if(i<=chance){
+//         if(guess>num){
+//         guess=parseInt(prompt('已猜了'+i+'次\n猜大了!\n请重新输入一个'+min+'-'+max+'的整数：'))
+        
+//         }
+//         else if(guess<num){
+//         guess=parseInt(prompt('已猜了'+i+'次\n猜小了!\n请重新输入一个'+min+'-'+max+'的整数：'))
+        
+//         }
+//         else{
+//             alert('恭喜你答对了，是数字'+guess+'\n累计猜的次数为：'+i);
+//             break;
+//         }
+    
+//     }
+//     else{
+//         alert('次数用完，下次继续努力');
+//         break;
+//     }
+    
+// }
+
 //-------------------------------------------------------------- 
 //倒计时
 function countDown(date){
