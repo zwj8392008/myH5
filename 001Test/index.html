@@ -14,17 +14,52 @@
             height: 100%;
         }
         @keyframes changeBackground{
-            0%{background:red};
-            100%{background:yellow}
+            0% {background:red;}
+            50% {background: blue;}
+            100% {background:yellow;}
+        }
+        @keyframes changeLocation{
+            0%{left:0px;}
+            50%{left:100px;}
+            100%{left:0px;}
+
+        }
+        @keyframes changeLocationButton{
+            0%{left:0px;}
+            50%{left:300px;}
+            100%{left:0px;}
+
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            position:relative;
+            background-color: red;
+            animation-name:changeLocation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        button{
+            position: relative;
+            background-color: green;
+            animation-name:changeLocationButton;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
         h1{
-            animation:changeBackground 2s infinite;
+            position: relative;
+            background-color: green;
+            animation-name:changeLocation, changeBackground;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
         }
-
     </style>
 </head>
 <body>
+    
     <h1>myH5</h1>
+    <div></div>
     <button onclick="myFunction()">点我</button>
     <!-- <image src="./images/dinosaur.jpg" /> -->
     <script>
