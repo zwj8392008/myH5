@@ -13,10 +13,18 @@
         html{
             height: 100%;
         }
+        @keyframes changeBackground{
+            0%{background:red};
+            100%{background:yellow}
+        }
+        h1{
+            animation:changeBackground 2s infinite;
+        }
 
     </style>
 </head>
 <body>
+    <h1>myH5</h1>
     <button onclick="myFunction()">点我</button>
     <!-- <image src="./images/dinosaur.jpg" /> -->
     <script>
